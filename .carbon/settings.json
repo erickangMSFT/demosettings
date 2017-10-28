@@ -1,0 +1,67 @@
+{
+    "dashboard.database.widgets": [
+        {
+            "name": "Query Data Store",
+            "gridItemConfig": {
+                "sizex": 2,
+                "sizey": 1
+            },
+            "widget": {
+                "insights-widget": {
+                    "type": {
+                        "timeSeries": {
+                            "dataDirection": "horizontal",
+                            "dataType": "point",
+                            "legendPosition": "top",
+                            "labelFirstColumn": false,
+                            "columnsAsLabels": false
+                        }
+                    },
+                    "queryFile": "${workspaceRoot}/qds.sql"
+                }
+            }
+        },
+        {
+            "name": "Resource Usage",
+            "gridItemConfig": {
+                "sizex": 2,
+                "sizey": 1
+            },
+            "widget": {
+                "insights-widget": {
+                    "type": {
+                        "timeSeries": {
+                            "dataDirection": "horizontal",
+                            "dataType": "point",
+                            "legendPosition": "top",
+                            "labelFirstColumn": false,
+                            "columnsAsLabels": false
+                        }
+                    },
+                    "queryFile": "${workspaceRoot}/resource.sql"
+                }
+            }
+        },
+        {
+            "name": "Table Space",
+            "widget": {
+                "table-space-db-insight": null
+            },
+            "gridItemConfig": {
+                "sizex": 2,
+                "sizey": 1
+            }
+        },
+        {
+            "name": "Search",
+            "gridItemConfig": {
+                "sizex": 1,
+                "sizey": 2
+            },
+            "widget": {
+                "explorer-widget": {}
+            }
+        }
+    ],
+    "dashboard.database.properties": true
+}
